@@ -2,13 +2,8 @@
 #define ENEMIGO_H
 
 #include "personaje.h"
+#include "enums.h"
 #include <iostream>
-
-enum class TipoEnemigo {
-    NORMAL,
-    MINIJEFE,
-    JEFEFINAL
-};
 
 class Enemigo : public Personaje {
 private:

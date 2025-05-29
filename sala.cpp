@@ -1,34 +1,16 @@
-#include "sala.h"
-#include <iostream>
+#ifndef SALA_H
+#define SALA_H
 
-Sala::Sala(const Enemigo& enemigo) : enemigo(enemigo) {}
+#include "heroe.h"
+#include "enemigo.h"
 
-bool Sala::iniciarCombate(Heroe& heroe) {
-    while (heroe.estaVivo() && enemigo.estaVivo()) {
-        std::cout << "1. Atacar\n2. Usar poción (" << heroe.getPociones() << " disponibles)\n";
-        int opcion;
-        std::cin >> opcion;
+class Sala {
+private:
+    Enemigo enemigo;
 
-        if (opcion == 1) {
-            int danio = heroe.atacar();
-            enemigo.recibirDanio(danio);
-            std::cout << heroe.getNombre() << " inflige " << danio << " daño.\n";
-        } else if (opcion == 2) {
-            if (!heroe.usarPocion()) {
-                std::cout << "No tienes pociones.\n";
-            } else {
-                std::cout << heroe.getNombre() << " usa una poción y recupera vida.\n";
-            }
-        } else {
-            std::cout << "Opción inválida.\n";
-            continue;
-        }
+public:
+    Sala(const Enemigo& enemigo);
+    bool iniciarCombate(Heroe& heroe);
+};
 
-        if (enemigo.estaVivo()) {
-            int danio = enemigo.atacar();
-            heroe.recibirDanio(danio);
-            std::cout << enemigo.getNombre() << " contraataca con " << danio << " daño.\n";
-        }
-    }
-    return heroe.estaVivo();
-}
+#endif

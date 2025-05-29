@@ -17,9 +17,13 @@ public:
     virtual void recibirDanio(int danio);
     virtual int atacar() const;
     bool estaVivo() const;
-    std::string getNombre() const;
     int getVida() const;
+    int getVidaMaxima() const;
+    std::string getNombre() const;
     void curar(int puntos);
+    void aumentarAtaque(int valor);
+    void aumentarDefensa(int valor);
+    void aumentarSuerte(int valor);
 };
 
 #endif
