@@ -1,0 +1,3 @@
+C:/Users/badly/CLionProjects/Mazmorra/cmake-build-debug/CMakeFiles/Mazmorra.dir
+C:/Users/badly/CLionProjects/Mazmorra/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/badly/CLionProjects/Mazmorra/cmake-build-debug/CMakeFiles/rebuild_cache.dir
