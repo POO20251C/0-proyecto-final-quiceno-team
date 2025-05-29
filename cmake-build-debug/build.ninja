@@ -97,14 +97,14 @@ build CMakeFiles/Mazmorra.dir/scoremanager.cpp.obj: CXX_COMPILER__Mazmorra_unsca
   OBJECT_DIR = CMakeFiles\Mazmorra.dir
   OBJECT_FILE_DIR = CMakeFiles\Mazmorra.dir
 
-build CMakeFiles/Mazmorra.dir/mazmorra.cpp.obj: CXX_COMPILER__Mazmorra_unscanned_Debug C$:/Users/badly/CLionProjects/Mazmorra/mazmorra.cpp || cmake_object_order_depends_target_Mazmorra
-  DEP_FILE = CMakeFiles\Mazmorra.dir\mazmorra.cpp.obj.d
+build CMakeFiles/Mazmorra.dir/equipo.cpp.obj: CXX_COMPILER__Mazmorra_unscanned_Debug C$:/Users/badly/CLionProjects/Mazmorra/equipo.cpp || cmake_object_order_depends_target_Mazmorra
+  DEP_FILE = CMakeFiles\Mazmorra.dir\equipo.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Mazmorra.dir
   OBJECT_FILE_DIR = CMakeFiles\Mazmorra.dir
 
-build CMakeFiles/Mazmorra.dir/equipo.cpp.obj: CXX_COMPILER__Mazmorra_unscanned_Debug C$:/Users/badly/CLionProjects/Mazmorra/equipo.cpp || cmake_object_order_depends_target_Mazmorra
-  DEP_FILE = CMakeFiles\Mazmorra.dir\equipo.cpp.obj.d
+build CMakeFiles/Mazmorra.dir/enums.cpp.obj: CXX_COMPILER__Mazmorra_unscanned_Debug C$:/Users/badly/CLionProjects/Mazmorra/enums.cpp || cmake_object_order_depends_target_Mazmorra
+  DEP_FILE = CMakeFiles\Mazmorra.dir\enums.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Mazmorra.dir
   OBJECT_FILE_DIR = CMakeFiles\Mazmorra.dir
@@ -117,7 +117,7 @@ build CMakeFiles/Mazmorra.dir/equipo.cpp.obj: CXX_COMPILER__Mazmorra_unscanned_D
 #############################################
 # Link the executable Mazmorra.exe
 
-build Mazmorra.exe: CXX_EXECUTABLE_LINKER__Mazmorra_Debug CMakeFiles/Mazmorra.dir/main.cpp.obj CMakeFiles/Mazmorra.dir/heroe.cpp.obj CMakeFiles/Mazmorra.dir/enemigo.cpp.obj CMakeFiles/Mazmorra.dir/item.cpp.obj CMakeFiles/Mazmorra.dir/inventario.cpp.obj CMakeFiles/Mazmorra.dir/sala.cpp.obj CMakeFiles/Mazmorra.dir/personaje.cpp.obj CMakeFiles/Mazmorra.dir/scoremanager.cpp.obj CMakeFiles/Mazmorra.dir/mazmorra.cpp.obj CMakeFiles/Mazmorra.dir/equipo.cpp.obj
+build Mazmorra.exe: CXX_EXECUTABLE_LINKER__Mazmorra_Debug CMakeFiles/Mazmorra.dir/main.cpp.obj CMakeFiles/Mazmorra.dir/heroe.cpp.obj CMakeFiles/Mazmorra.dir/enemigo.cpp.obj CMakeFiles/Mazmorra.dir/item.cpp.obj CMakeFiles/Mazmorra.dir/inventario.cpp.obj CMakeFiles/Mazmorra.dir/sala.cpp.obj CMakeFiles/Mazmorra.dir/personaje.cpp.obj CMakeFiles/Mazmorra.dir/scoremanager.cpp.obj CMakeFiles/Mazmorra.dir/equipo.cpp.obj CMakeFiles/Mazmorra.dir/enums.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Mazmorra.dir

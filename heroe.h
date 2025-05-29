@@ -1,23 +1,30 @@
 #ifndef HEROE_H
 #define HEROE_H
 
-#include "Personaje.h"
-#include "Equipo.h"
+#include "personaje.h"
+#include "enums.h"
+#include <iostream>
 
 class Heroe : public Personaje {
-    Equipo equipo;
-    int hpMax;
+private:
+    Rol rol;
+    int pociones;
 
 public:
-    Heroe(std::string nombre);
+    Heroe(const std::string& nombre, int vida, int ataque, int defensa, int suerte, Rol rol);
 
-    void subirStats();
-    void curar(int cantidad);
-    void equipar(const Equipo& eq);
+    Rol getRol() const;
+    void mostrarInfo() const;
 
-    int getHPMax() const;
+    void agregarPociones(int cantidad);
+    bool usarPocion();
+    int getPociones() const;
 };
 
 #endif
+
+
+
+
 
 

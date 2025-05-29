@@ -18,7 +18,7 @@ add_executable(Mazmorra main.cpp
         personaje.h
         scoremanager.cpp
         scoremanager.h
-        mazmorra.cpp
-        mazmorra.h
         equipo.cpp
-        equipo.h)
+        equipo.h
+        enums.cpp
+        enums.h)

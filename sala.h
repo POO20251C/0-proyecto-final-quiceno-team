@@ -1,16 +1,18 @@
 #ifndef SALA_H
 #define SALA_H
 
-#include "Heroe.h"
-#include "Enemigo.h"
-#include <vector>
+#include "heroe.h"
+#include "enemigo.h"
 
 class Sala {
+private:
     Enemigo enemigo;
 
 public:
-    Sala(Enemigo e);
-    bool iniciarBatalla(std::vector<Heroe>& heroes);
+    Sala(const Enemigo& enemigo);
+    bool iniciarCombate(Heroe& heroe);
 };
 
 #endif
+
+

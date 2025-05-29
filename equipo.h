@@ -5,22 +5,15 @@
 
 class Equipo {
 private:
+    int bonusHP, bonusATK, bonusDEF, bonusLCK;
     std::string nombre;
-    int bonusHP;
-    int bonusATK;
-    int bonusDEF;
-    int bonusLCK;
-
 public:
-    Equipo(std::string nombre = "Ninguno", int hp = 0, int atk = 0, int def = 0, int lck = 0);
-
-    std::string getNombre() const;
+    Equipo(std::string n, int hp, int atk, int def, int lck);
     int getBonusHP() const;
     int getBonusATK() const;
     int getBonusDEF() const;
     int getBonusLCK() const;
-
-    void mostrar() const;
+    std::string getNombre() const;
 };
 
-#endif
+#endif // EQUIPO_H

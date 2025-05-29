@@ -1,16 +1,19 @@
 #ifndef ENEMIGO_H
 #define ENEMIGO_H
 
-#include "Personaje.h"
-
-enum TipoEnemigo { SOLDADO, MINI_JEFE, GRAN_JEFE };
+#include "personaje.h"
+#include "enums.h"
+#include <iostream>
 
 class Enemigo : public Personaje {
+private:
     TipoEnemigo tipo;
 
 public:
-    Enemigo(std::string nombre, TipoEnemigo tipo);
+    Enemigo(const std::string& nombre, int vida, int ataque, int defensa, int suerte, TipoEnemigo tipo);
+
     TipoEnemigo getTipo() const;
+    void mostrarInfo() const;
 };
 
 #endif

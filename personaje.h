@@ -6,26 +6,37 @@
 class Personaje {
 protected:
     std::string nombre;
-    int hp, atk, def, spd, lck;
+    int vida;
+    int vidaMaxima;
+    int ataque;
+    int defensa;
+    int suerte;
 
 public:
-    Personaje(std::string nombre, int hp, int atk, int def, int spd, int lck);
+    Personaje(const std::string& nombre, int vida, int ataque, int defensa, int suerte);
     virtual ~Personaje() = default;
 
-    virtual void atacar(Personaje& objetivo);
     virtual void recibirDanio(int danio);
-    virtual int calcularDanio() const;
-    virtual bool estaVivo() const;
+    virtual int atacar() const;
 
-    int getVelocidad() const;
+    bool estaVivo() const;
+    int getVida() const;
+    int getVidaMaxima() const;
+    int getAtaque() const;
+    int getDefensa() const;
     int getSuerte() const;
-    int getHP() const;
-    int getDEF() const;
     std::string getNombre() const;
+    void curar(int puntos);
+
+    void aumentarAtaque(int valor);
+    void aumentarDefensa(int valor);
+    void aumentarSuerte(int valor);
 };
 
-#endif // PERSONAJE_H
-#ifndef PERSONAJE_H
-
 #endif
+
+
+
+
+
 
